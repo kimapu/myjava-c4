@@ -17,8 +17,8 @@ Write a class named UnitConverter that contains the following two methods:
 
 Write a main method that invokes these methods to display the following tables:
 <pre>
-Inches	Centimeters	Centimeters	Inches    
-1.0	2.54		5.0		1.97
+Inches	Centimeters
+1.0	2.54
 </pre>
 
 
