@@ -13,7 +13,7 @@ public class Q1 {
 		System.out.println( "-- QUESTION 1 ---" );
 		
 		System.out.println( "Ënter radius: " );
-		int radius = scan.nextInt(); //capture-convert input to int
+		int radius = scan.nextInt(); //capture+convert input to int
 
 		System.out.println( "Enter length: " );
 		String lengthString = scan.next();//capture
