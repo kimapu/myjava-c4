@@ -13,3 +13,5 @@ Exercise:
 4. Write a program that reads an integer and checks whether it is even. For example, if your input is 25, the output should be : Is 25 an even number? false If your input is 2500, the output should be: Is 2500 an even number? true
 
 5. Write a program that reads in investment amount, annual interest rate, and number of years, and displays the future investment value using the following formula. futureInvestmentVal = investmentAmount x (1 + monthlyInterestRate) <sup>numberOfYears*12</sup>
+
+<pre><code>foo	baz		bim</code></pre>
