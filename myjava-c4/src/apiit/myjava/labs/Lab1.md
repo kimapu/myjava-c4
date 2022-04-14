@@ -1,12 +1,10 @@
 # Lab 1
 
-Java method
+## Java primitive types and operation
 
 Exercise:
-
-1. Write a program that reads a Fahrenheit degree in double, then converts it to Celsius and displays the result on the console. The formula for the conversion is as follows: celsius = Fahrenheit – 32 * 5 / 9
-
-Write a program that reads in the radius and length of a cylinder and computes volume using the following formulas: area = radius * radius * PI volume = area * length
+---
+1. Write a program that reads in the radius and length of a cylinder and computes volume using the following formulas: area = radius * radius * PI volume = area * length
 
 Write a program that reads an integer between 0 and 1000 and adds all the digits in the integer. For example, if an integer is 943, the sum of all its digit is 16.
 
