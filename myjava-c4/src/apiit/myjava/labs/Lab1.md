@@ -1,26 +1,21 @@
 # Lab 1
 
-## Java method
+Java method
 
-Write a class named UnitConverter that contains the following two methods:
-	/** Converts from inches to centimeters */
-	public static double inchToCentimeter(double in) 
-	
-	/** Converts from centimeters to inches */
-	public static double centimeterToInch(double cm)	
+Exercise:
 
-	The formula for the conversion is:
-		1 inch = 2.54 cm
-		1 centimeter = 0.393701 inches
-	Write a main method that invokes these methods to display the following tables:
-Inches     Centimeters          Centimeters     Inches    
-1.0        2.54                 5.0             1.97      
-2.0        5.08                 10.0            3.94      
-3.0        7.62                 15.0            5.91      
-4.0        10.16                20.0            7.87      
-5.0        12.70                25.0            9.84      
-6.0        15.24                30.0            11.81     
-7.0        17.78                35.0            13.78     
-8.0        20.32                40.0            15.75     
-9.0        22.86                45.0            17.72     
-10.0       25.40                50.0            19.69
+1. Write a program that reads a Fahrenheit degree in double, then converts it to Celsius and displays the result on the console. The formula for the conversion is as follows: celsius = Fahrenheit – 32 * 5 / 9
+
+Write a program that reads in the radius and length of a cylinder and computes volume using the following formulas: area = radius * radius * PI volume = area * length
+
+Write a program that reads an integer between 0 and 1000 and adds all the digits in the integer. For example, if an integer is 943, the sum of all its digit is 16.
+
+Write a program that converts an uppercase letter to a lowercase letter.
+
+Write a program that receives an ASCII code (an integer between 0 and 128) and displays its character. For example, if the user enters 97, the program displays character ‘a’.
+
+Write a program that reads an integer and checks whether it is even. For example, if your input is 25, the output should be : Is 25 an even number? false If your input is 2500, the output should be: Is 2500 an even number? true
+
+Write a program that prompts the user to enter an integer and determines whether it is divisible by 5 or 6, whether it is divisible by 5 or 6, and whether it is divisible by 5 or 6, but not both. For example, if your input is 10, the output should be: Is 10 divisible by 5 and 6? false Is 10 divisible by 5 or 6? true Is 10 divisible by 5 or 6, but not both? true
+
+Write a program that reads in investment amount, annual interest rate, and number of years, and displays the future investment value using the following formula. futureInvestmentVal = investmentAmount x (1 + monthlyInterestRate) numberOfYears*12
