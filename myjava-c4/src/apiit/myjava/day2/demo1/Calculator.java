@@ -2,7 +2,13 @@ package apiit.myjava.day2.demo1;
 
 public class Calculator {
 
-	public int i1, i2;
+	public final int i1, i2;
+	
+	public Calculator(int value1, int value2)
+	{
+		i1 = value1;
+		i2 = value2;
+	}
 	
 	public int add() {
 		return i1 + i2;
