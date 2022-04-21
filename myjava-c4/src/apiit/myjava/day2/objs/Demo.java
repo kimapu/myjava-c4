@@ -7,7 +7,6 @@ public class Demo {
 		//object identity
 		System.out.println( new Demo() );
 		
-		
 	}
 	
 }
