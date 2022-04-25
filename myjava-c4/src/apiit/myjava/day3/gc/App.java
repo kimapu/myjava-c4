@@ -1,16 +1,12 @@
 package apiit.myjava.day3.gc;
 
-import java.util.concurrent.TimeUnit;
-
 public class App {
 
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Throwable{
 		
 		Message msg1 = new Message("hello world!");
 		
-		TimeUnit.SECONDS.sleep(2);
-		
-		msg1 = null;
+		msg1 = new Message("hows there?");
 		
 		System.out.println( "> GC is being processed..." );
 		
