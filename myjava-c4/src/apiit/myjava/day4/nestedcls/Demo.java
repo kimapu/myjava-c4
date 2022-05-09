@@ -43,7 +43,7 @@ class Outer
 		void show(int i)
 		{
 			System.out.println( "-- Inner ---" );
-			System.out.println( i + this.i + Outer.this.i); //Shadowing -> 99+2+1
+			System.out.println( i + this.i + Outer.this.i); //shadowing 99+2+1
 		}
 		
 	}
