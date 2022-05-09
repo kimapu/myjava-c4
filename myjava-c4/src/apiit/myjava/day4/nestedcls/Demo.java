@@ -9,7 +9,7 @@ public class Demo {
 		outer.show();
 		//define inner 
 		Outer.Inner inner = outer.new Inner();
-		inner.show();
+		inner.show(99);
 		//While,
 		//define staticnested
 		Outer.StaticNested nested = new Outer.StaticNested();
@@ -20,6 +20,8 @@ public class Demo {
 
 class Outer
 {
+	int i = 1;
+	
 	void show()
 	{
 		System.out.println( "-- Outer ---" );
@@ -31,10 +33,19 @@ class Outer
 	 */
 	class Inner
 	{
+		int i = 2;
 		void show()
 		{
+			//Outer.this.show();
 			System.out.println( "-- Inner ---" );
 		}
+		
+		void show(int i)
+		{
+			System.out.println( "-- Inner ---" );
+			System.out.println( i + this.i + Outer.this.i); //Shadowing -> 99+2+1
+		}
+		
 	}
 	
 	/**
