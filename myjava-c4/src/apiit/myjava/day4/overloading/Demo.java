@@ -6,7 +6,6 @@ public class Demo {
 		
 		new Bob().show();
 		
-
 		new Bob().show("arg");
 		
 		new Bob().show( new String[] {"elem1", "elem2"}  );
