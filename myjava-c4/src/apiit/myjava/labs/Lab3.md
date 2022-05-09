@@ -21,7 +21,7 @@ Q1. (a)	A bank offers its customers the following account types:
 Q2. (a)	Override the withdraw() and deposit() methods in the CurrentAccount class such that the transaction fee is automatically deducted for each transaction once the number of free transactions has been exceeded.  Next, simplify your  client program accordingly.
 
 
-	(b)	Write the toString() method for the Account class such that it returns the object’s data field values.  Next, override the toString() method in the CurrentAccount class so that the object’s transaction count is also returned as part of the string.  Modify your test program from Q1(b) to test the toString() methods.
+(b)	Write the toString() method for the Account class such that it returns the object’s data field values.  Next, override the toString() method in the CurrentAccount class so that the object’s transaction count is also returned as part of the string.  Modify your test program from Q1(b) to test the toString() methods.
 
 
-	(c)	Override the equals() method in the Account class such that it returns true if the current object has the same account number as the parameter.  Test to ensure that your method works correctly.
+(c)	Override the equals() method in the Account class such that it returns true if the current object has the same account number as the parameter.  Test to ensure that your method works correctly.
