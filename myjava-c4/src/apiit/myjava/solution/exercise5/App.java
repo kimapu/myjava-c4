@@ -48,7 +48,7 @@ public class App {
 		//System.out.println( acc1 );
 		
 		Account acc2 = new Account();
-		acc2.number = 123;
+		acc2.number = 321;
 		//System.out.println( acc2 );
 		
 		//System.out.println( acc1.equals(acc2) );
