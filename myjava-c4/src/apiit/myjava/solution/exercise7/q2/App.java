@@ -21,7 +21,7 @@ public class App {
 				if( line.length() > 80 )
 					throw new ExceptionLineTooLong();
 				
-				System.out.println( line );
+				System.out.println( line ); //skip if there is an exception event generated
 			}
 			
 		} catch (IOException | ExceptionLineTooLong e) {
