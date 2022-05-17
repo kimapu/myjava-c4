@@ -42,12 +42,13 @@ public class Demo {
 		String nameToRemove = "john";
 //		1)
 //		List<String> filteredLst = new Demo().remove(nameLst, nameToRemove);
-//		filteredLst.forEach(System.out :: println);
-	
-//		//2)
+
+//		//2
 		List<String> filteredLst = Arrays.asList(nameLst).stream()
 			.filter( elem -> !elem.equalsIgnoreCase(nameToRemove)) 
 			.collect( Collectors.toCollection( ArrayList :: new ) );
+	
+		
 		filteredLst.forEach(System.out :: println);
 				
 		
