@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
@@ -11,6 +13,7 @@ import java.util.StringTokenizer;
 public class Scorer {
 
 
+	private int count = 0;
 	private final String targetFile;
 	
 	public Scorer( String file ) {
@@ -30,6 +33,7 @@ public class Scorer {
 				StringTokenizer tokenizer = new StringTokenizer( scoreLine );
 				while ( tokenizer.hasMoreTokens() ) {
 					sum += Double.parseDouble(tokenizer.nextToken());
+					count++; //counting the # of score when iterating...
 				}
 			}
 		}
@@ -40,11 +44,7 @@ public class Scorer {
 	 * + avg() : double
 	 */
 	public double avg() {
-		double avg = 0;
-		/**
-		 * TO BE prepared by students... :)
-		 */
-		return avg;
+		return sum() / count;
 	}
 	
 	/**
@@ -57,11 +57,17 @@ public class Scorer {
 			content = new ArrayList<>();
 			//BufferedReader to read the content
 			try {
-				BufferedReader br = new BufferedReader(new FileReader(targetFile));
-				String line;
-				while ( (line = br.readLine()) != null ) {
-					content.add(line);
-				}
+
+				//w/ old-school APIs
+//				BufferedReader br = new BufferedReader(new FileReader(targetFile));
+//				String line;
+//				while ( (line = br.readLine()) != null ) {
+//					content.add(line);
+//				}
+				
+				//w/ Files API (java8 or later)
+				content = Files.readAllLines( Paths.get(targetFile) );
+				
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

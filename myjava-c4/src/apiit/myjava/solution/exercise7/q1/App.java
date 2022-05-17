@@ -12,6 +12,7 @@ public class App {
 
 		// show
 		System.out.println("Total: " + total);
+		System.out.println("Average: " + average);
 	}
 
 }
